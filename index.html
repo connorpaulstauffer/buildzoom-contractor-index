@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contractor Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/stylesheets/application.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="vendor/javascripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/application.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">buildzoom</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row" id="page-content">
+      <div class="col-md-8" id="primary-content">
+
+        <div id="index-breadcrumbs">
+          <h6><a>BuildZoom</a> / <a>Licensed Contractor Search</a> / <a>Best of San Francisco, CA</a> / General Contractors</h6>
+        </div>
+
+        <!-- <div id="search-result-summary">
+        </div> -->
+
+        <div class="row" id="search-controls">
+          <form>
+            <div class="form-group" id="category-search">
+              <label class="search-text">SEARCH BY CONTRACTOR'S SPECIALTY OR NAME</label>
+              <input type="text" class="form-control" placeholder="Search [ex: bathroom remodeling, Valex construction]">
+            </div>
+
+            <div class="form-group" id="location-search">
+              <label class="search-text">NEAR</label>
+              <input type="text" class="form-control" placeholder="Enter a city">
+            </div>
+
+            <div id="search-button-container">
+              <button type="submit" class="btn btn-success" id="search-button">SEARCH</button>
+            </div>
+          </form>
+
+          <p id="category-links" class="search-text">
+            View top contractors in other categories: <a>flooring</a> <a>general</a> <a>contracting</a> <a>home</a> <a>construction</a> <a>remodeling</a> <a>roofing</a> <a>solar</a> <a>windows</a>
+          </p>
+
+          <div class="col-md-12" id="filter-controls">
+            <button id="show-filters"
+                    type="submit"
+                    class="btn btn-default filter-button filter-toggle">
+              <span class="glyphicon glyphicon-plus"></span>
+              SHOW FILTERS
+            </button>
+
+            <button id="hide-filters"
+                    type="submit"
+                    class="btn btn-default filter-button filter-toggle hidden">
+              <span class="glyphicon glyphicon-minus"></span>
+              HIDE FILTERS
+            </button>
+
+            <button type="submit" class="btn btn-default filter-button">RESET FILTERS</button>
+          </div>
+
+          <div class="col-md-12 hidden" id="filter-container">
+            <div class="row">
+              <div class="col-md-3" id="sort-by">
+                <h6 class="filter-header">SORT BY</h6>
+                <p><a href="#">Relevance</a></p>
+                <p><a href="#">BuildZoom score</a></p>
+                <p><a href="#">Verified projects</a></p>
+                <p><a href="#">Client ratings</a></p>
+                <p><a href="#">Avg project value</a></p>
+              </div>
+
+              <div class="col-md-3" id="distance-filter">
+                <h6 class="filter-header">DISTANCE</h6>
+                <p><a href="#">Only San Francisco</a></p>
+                <p><a href="#">Metro Area (50 miles)</a></p>
+              </div>
+
+              <div class="col-md-3" id="category-filter">
+                <h6 class="filter-header">CATEGORY</h6>
+                <p><a href="#">All contractors</a></p>
+                <p><a href="#">Residential only</a></p>
+                <p><a href="#">Commercial only</a></p>
+              </div>
+
+              <div class="col-md-3" id="attribute-filter">
+                <h6 class="filter-header">CONTRACTORS WITH</h6>
+                  <label><input type="checkbox"> Client reviews</label><br>
+
+                  <label>
+                    <input type="checkbox"> Verified projects
+                  </label><br>
+
+                  <label>
+                    <input type="checkbox"> Project photos
+                  </label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contractors-container" class="row">
+          <div id="location-details-small">
+            <h4>33,404 General Contractors in San Francisco metro area</h4>
+            To help you find the perfect San Francisco general contractor for your
+            next home improvement project, we've prepared reports on all 33,404
+            contractors based in the city. Each contractor has been assigned a
+            score based on their client feedback, license status, verified work
+            history and more. If you're planning on hiring a general contractor
+            in San Francisco, there are several things you must know to ensure a
+            positive hiring experience. Contractor licensing in San Francisco is
+            regulated by the California Contractors State License Board…<a>More</a>
+          </div>
+
+          <div id="contractors" class="col-md-12">
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row contractor-card">
+              <div class="contractor-card-item contractor-rank-container">
+                <h4 class="contractor-rank grey">1</h4>
+              </div>
+              <div class="contractor-card-item contractor-card-content">
+                <a href="#"><h4>CMS BUILDERS AND RESTORATION</h4></a>
+                <span class="grey">License # 907568 (General Building Contractor)</span>
+                &middot
+                <span class="grey">Residential</span>
+                &middot
+                <span class="grey">General Contracting</span>
+                &middot
+                <div class="contractor-rating">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span><a href="#">(3)</a></span>
+                </div>
+
+                <div class="contractor-lower-details">
+                  <div class="contractor-detail-item contractor-detail-left">
+                    <div class="contractor-detail-item">
+                      <img class="img-responsive contractor-image" src="assets/images/cms-image-1.jpg"/>
+                    </div>
+
+                    <div class="contractor-detail-item contractor-description">
+                      <p>
+                        CMS Builders and Restoration is a full service general contractor
+                        that specializes in kitchen remodeling, bathroom remodeling,
+                        room additions, general remodeling, custom cabinetry, electrical,
+                        plumbing, wrought iron, patio enclosure, and much more.
+                        Established in 2010, CM...<a>more</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contractor-detail-item contractor-stats">
+                    <div class="contractor-stat">
+                      <h4>155</h4>
+                      <h6>BuildZoom score</h6>
+                      <button class="btn btn-success btn-xs">ELITE</button>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>1</h4>
+                      <h6>Verified projects</h6>
+                    </div>
+
+                    <div class="contractor-stat">
+                      <h4>$35.7K</h4>
+                      <h6>Avg project value</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" id="sidebar-content">
+        <div id="location-details">
+          <h4>33,404 General Contractors in San Francisco metro area</h4>
+          To help you find the perfect San Francisco general contractor for your
+          next home improvement project, we've prepared reports on all 33,404
+          contractors based in the city. Each contractor has been assigned a
+          score based on their client feedback, license status, verified work
+          history and more. If you're planning on hiring a general contractor
+          in San Francisco, there are several things you must know to ensure a
+          positive hiring experience. Contractor licensing in San Francisco is
+          regulated by the California Contractors State License Board…<a>More</a>
+        </div>
+
+        <div id="contractor-form">
+          <p>
+            We know who the best (and worst) contractors are.
+            This tool will help you get bids from the best.
+          </p>
+
+          <form>
+            <div class="form-group">
+              <label>
+                I WANT BIDS ON...
+                <input type="text" class="form-control" placeholder="ex: Bathroom remodeling">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                WHEN?
+                <select class="form-control">
+                  <option>- Select one -</option>
+                  <option>as soon as possible</option>
+                  <option>within the next few weeks</option>
+                  <option>within the next few months</option>
+                  <option>within the next year</option>
+                </select>
+              </label>
+            </div>
+
+            <div id="contractor-button">
+              <button type="button" class="btn btn-success">GET STARTED</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

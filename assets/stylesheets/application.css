@@ -1,0 +1,357 @@
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+input {
+  border-radius: 2px !important;
+  height: 34px !important;
+}
+
+button {
+  border-radius: 2px !important;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.row {
+  margin: 0;
+}
+
+#page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#sidebar-content {
+  padding-left: 0px;
+  /*padding: 5px;*/
+}
+
+#primary-content {
+  padding-right: 0;
+}
+
+#search-controls {
+  background-color: #E9E9E9;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+#category-search {
+  width: 58%;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#category-search label {
+  font-size: 13px;
+}
+
+#category-search input {
+  /*width: 90% !important;*/
+}
+
+#location-search {
+  width: 25%;
+  display: inline-block;
+  /*box-sizing: border-box;*/
+  text-align: left;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+#location-search input {
+  /*width: 90%;*/
+  /*margin-left: -4px;*/
+  /*right: 0;*/
+}
+
+#location-search label {
+  width: 20%;
+  padding-right: 15px;
+  font-size: 13px;
+}
+
+#search-button {
+  width: 100%;
+  height: 34px;
+  margin-bottom: 2px;
+}
+
+#search-button-container {
+  width: 15%;
+  display: inline-block;
+}
+
+#filter-controls {
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+#category-links {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+#category-links a {
+  text-decoration: underline;
+}
+
+.search-text {
+  margin-left: 5px;
+}
+
+#filter-controls button {
+  border: none;
+  border-radius: 0 !important;
+  background-color: lightgrey;
+  width: 148px;
+}
+
+#filter-controls button:hover {
+  background-color: #fff;
+}
+
+#filter-button {
+  width: 150px;
+}
+
+#attribute-filter input {
+  vertical-align: middle;
+  margin: 0;
+}
+
+#attribute-filter label {
+  height: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+#filter-container.hidden {
+  height: 0px;
+}
+
+#index-breadcrumbs {
+  padding: 15px;
+  padding-left: 10px;
+}
+
+#index-breadcrumbs h6 {
+  margin: 0;
+}
+
+#search-result-summary {
+  padding: 15px;
+}
+
+#location-details {
+  padding: 15px;
+}
+
+#location-details h4 {
+  margin-top: 0;
+}
+
+#contractor-form {
+  padding: 15px;
+}
+
+#contractor-form p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#contractor-form label {
+  width: 100%;
+  font-weight: normal;
+}
+
+#contractor-button {
+  text-align: center;
+}
+
+#contractor-button button {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#contractors-container {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contractor-card {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  margin: 0;
+  border-bottom: thin solid rgba(0, 0, 0, 0.2);
+}
+
+.contractor-card h4 {
+  margin: 0;
+}
+
+.contractor-card span {
+  font-size: 12px;
+}
+
+.contractor-card img {
+  height: 97px;
+  width: 97px;
+}
+
+.glyphicon-star {
+  color: #CCAC00;
+}
+
+.contractor-lower-details {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.contractor-detail-item {
+  display: inline-block;
+  vertical-align: top;
+  /*height: 100px;*/
+}
+
+.contractor-detail-item p {
+  display: inline;
+}
+
+.contractor-description {
+  width: 70%;
+  padding-left: 15px;
+}
+
+.contractor-stat {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 32%;
+}
+
+#contractors {
+  padding: 0;
+}
+
+.contractor-card-item {
+  display: inline-block;
+  vertical-align: top;
+  /*box-sizing: border-box;*/
+}
+
+.contractor-card-item .contractor-rank {
+  margin: 0;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.grey {
+  color: grey;
+}
+
+.contractor-rank-container {
+  width: 3%;
+}
+
+.contractor-card-content {
+  width: 95%;
+}
+
+.contractor-detail-left {
+  width: 60%;
+}
+
+.contractor-rating {
+  display: inline-block;
+}
+
+.contractor-stats {
+  width: 38%;
+}
+
+.contractor-image {
+  margin: 0 auto;
+}
+
+#location-details-small {
+  display: none;
+}
+
+@media screen and (max-width: 655px) {
+  .contractor-detail-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #location-search {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #category-search {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #search-button-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  #search-button {
+    width: 50%;
+  }
+
+  #sidebar-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #search-controls p {
+    margin-top: 10px;
+  }
+
+  /*.filter-button {
+    width: 49.3% !important;
+    box-sizing: border-box;
+  }*/
+}
+
+
+@media screen and (max-width: 991px) {
+  #primary-content {
+    padding: 0;
+  }
+
+  #location-details-small {
+    display: block;
+  }
+
+  #location-details {
+    display: none;
+  }
+
+  #contractors-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /*#search-controls {
+    margin-left: -15px;
+    /*margin-right: -15px;*/
+  }
+}
+
+/*.contractor-detail-item {
+}*/
